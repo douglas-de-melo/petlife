@@ -9,6 +9,7 @@ body{
     color: #263138;
 }
 
+/* Cabeçalho */
 header{
     background-color: #ff9a6c;
     display: flex;
@@ -26,3 +27,48 @@ header nav a {
     text-decoration: none;
     padding: 32px;
 }
+
+/* seção inicial */
+ #inicio{
+    display: flex;
+    align-items: center;
+    gap: 32px;/* espaçamento */
+    /* Topo, direita, baixo, esquerda */
+    padding: 24px 80px 128px 80px;
+    position: relative;
+ }
+
+ h1,
+ h2{
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 32px;
+ }
+
+ .paragrafo{
+    line-height: 150%; /* altura da linha */
+    margin-bottom: 32px;
+ }
+
+ .botao{
+    background-color: #ff725e;
+    border-radius: 8px;
+    color: #fff;
+    /* vertical, horizontal */
+    padding: 16px 32px;
+    text-decoration: none;
+ }
+ .botao-transparente{
+    background-color: transparent;
+    color: #ff725e;
+    padding: 16px 32px;
+    text-underline-offset: 4px;
+ }
+
+ .absolute{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+ }

@@ -81,6 +81,7 @@ header nav a {
    gap: 32px;
    padding: 64px 80px;
  }
+
  #clinica li{
    margin-bottom: 16px;
    margin-left: 32px;
@@ -90,9 +91,11 @@ header nav a {
    padding: 64px 80px;
    text-align: center;
  }
+
  #farmacia img{
    margin: 64px auto;
  }
+
  #farmacia .paragrafo{
    max-width: 950px;
    margin: 0 auto;
@@ -104,26 +107,40 @@ header nav a {
    gap: 32px;
    padding: 64px 80px;
  }
+
  .duvida{
   position: relative;
  }
+
  .duvida h3{
   border: 2px solid #ff725e;
   border-radius: 8px;
   cursor: pointer;
   padding: 24px;
  }
+
  .duvida img{
   position: absolute;
   top: 32px;
   right: 24px;
  }
+
  .duvida .paragrafo{
   border-right: 1px solid #ff725e;
   border-bottom: 1px solid #ff725e;
   border-left: 1px solid #ff725e;
   border-radius: 0 0 8px 8px;
   margin-top: -8px;
+  padding: 0px 24px;
+  height: 0px;
+  opacity: 0; /* transparência dos elementos */
+  overflow: hidden; /* lida com o transbordamento dos elementos */
+  transition: .3s;
+ }
+
+ .duvida.ativa .paragrafo{
+  height: fit-content;/* Ajusta o conteúdo dentro do conteiner */
+  opacity: 1;
   padding: 24px;
  }
 
